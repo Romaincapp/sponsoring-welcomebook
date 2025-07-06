@@ -4,6 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcomebook - Créez votre guide de location</title>
+    <head>
+    <!-- Meta de base -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Principal -->
+    <title>Welcomebook - Créez des guides d'accueil personnalisés pour vos locations de vacances</title>
+    <meta name="description" content="Welcomebook vous aide à créer des guides d'accueil numériques personnalisés pour vos locations de vacances. Améliorez l'expérience de vos invités et réduisez vos messages de support.">
+    <meta name="keywords" content="guide accueil, location vacances, airbnb, guide numérique, hébergement touristique, expérience invités, location saisonnière, guide personnalisé, welcomebook">
+    <meta name="author" content="Welcomebook">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://welcomebook.be">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://welcomebook.be">
+    <meta property="og:title" content="Welcomebook - Guides d'accueil pour locations de vacances">
+    <meta property="og:description" content="Créez facilement des guides d'accueil numériques personnalisés pour améliorer l'expérience de vos invités en location de vacances.">
+    <meta property="og:image" content="https://welcomebook.be/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Welcomebook">
+    <meta property="og:locale" content="fr_BE">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://welcomebook.be">
+    <meta name="twitter:title" content="Welcomebook - Guides d'accueil pour locations de vacances">
+    <meta name="twitter:description" content="Créez facilement des guides d'accueil numériques personnalisés pour améliorer l'expérience de vos invités.">
+    <meta name="twitter:image" content="https://welcomebook.be/images/twitter-image.jpg">
+    <meta name="twitter:creator" content="@welcomebook">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Mobile & PWA -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Welcomebook">
+    
+    <!-- Preconnect pour optimiser les performances -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Welcomebook",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://welcomebook.be",
+        "description": "Plateforme pour créer des guides d'accueil personnalisés pour locations de vacances",
+        "offers": {
+            "@type": "Offer",
+            "category": "Subscription"
+        },
+        "provider": {
+            "@type": "Organization",
+            "name": "Welcomebook",
+            "url": "https://welcomebook.be"
+        },
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "Propriétaires de locations de vacances, gestionnaires Airbnb"
+        }
+    }
+    </script>
+    
+    <!-- Analytics & Tracking (à adapter selon vos outils) -->
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Meta business locaux (Belgique) -->
+    <meta name="geo.region" content="BE">
+    <meta name="geo.placename" content="Belgique">
+    <meta name="language" content="fr">
+    
+    <!-- Performance hints -->
+    <link rel="preload" href="/fonts/main-font.woff2" as="font" type="font/woff2" crossorigin>
+</head>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
         
@@ -247,7 +343,6 @@
             }
         }
     </style>
-</head>
 <body>
     <div class="banner-container" onclick="window.open('https://welcomebook.be', '_blank')">
         <div class="background-pattern"></div>
