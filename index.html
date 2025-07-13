@@ -99,6 +99,23 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
         
+        /* OPTIMISATION POUR WIDGET EMBEDDÉ */
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: transparent !important; /* Arrière-plan transparent */
+            height: auto; /* Hauteur automatique */
+            min-height: auto; /* Pas de hauteur minimale */
+            overflow: hidden; /* Évite les barres de défilement */
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px; /* Petit padding pour éviter les coupures */
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -110,7 +127,7 @@
             max-width: 800px;
             height: 80px;
             position: relative;
-            background: transparent;
+            background: rgba(255, 255, 255, 0.95); /* Légèrement transparent */
             border-radius: 12px;
             overflow: hidden;
             cursor: pointer;
@@ -118,11 +135,14 @@
             font-family: 'Poppins', sans-serif;
             margin: 0 auto;
             backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre pour se détacher */
+            border: 1px solid rgba(255, 255, 255, 0.8);
         }
         
         .banner-container:hover {
             transform: translateY(-2px);
             backdrop-filter: blur(15px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
         }
         
         .background-pattern {
@@ -273,6 +293,10 @@
         
         /* Responsive pour mobiles */
         @media (max-width: 768px) {
+            body {
+                padding: 8px;
+            }
+            
             .banner-container {
                 height: 70px;
                 border-radius: 10px;
@@ -307,6 +331,10 @@
         }
         
         @media (max-width: 480px) {
+            body {
+                padding: 6px;
+            }
+            
             .banner-container {
                 height: 60px;
             }
